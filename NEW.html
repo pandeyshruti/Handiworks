@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>COLLECTION</title>
+	<style>
+		div.gallery {
+    margin: 7px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    padding:30px 50px 80px 50px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+div.desc {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    text-decoration: bold;
+}
+h1{color: #efef77;
+text-decoration: bold;}
+
+
+
+	</style>
+}
+</head>
+<body background="data:image/jpeg;base64,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" width=100%>
+	<h1 style=color:pink><CENTER>JUTTIS</CENTER><br><br><a href="file:///C:/Users/admin/Downloads/ecomm.html" style=background-color:white>Back to Home</a></h1>
+	<br><br>
+	<br>
+	<br>
+	<br>
+<br>
+<br>
+<div class="gallery">
+  <a target="_blank" href="https://3.imimg.com/data3/QW/OS/MY-11225186/aa-500x500.jpg">
+    <img src="https://3.imimg.com/data3/QW/OS/MY-11225186/aa-500x500.jpg" alt="cloudfront" width="600" height="400"  align="right" hspace="5" vspace="5" >
+  </a>
+  <div class="desc">LEATHER JUTTIS<br><p>price-550/-<br><br><a href="#" style=background-color:yellow><h2>BUY NOW</h2></a></p></div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="https://images-na.ssl-images-amazon.com/images/I/41AW87NOBUL.jpg">
+    <img src="https://images-na.ssl-images-amazon.com/images/I/41AW87NOBUL.jpg" alt="2.imimg" width="600" height="400" align="right" hspace="5" vspace="5">
+  </a>
+  <div class="desc">MEN LEATHER JUTTIS<br><p>price-450/-<br><br><a href="#" style=background-color:yellow><h2>BUY NOW</h2></a></p></div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="https://5.imimg.com/data5/JT/MF/MY-37531300/fancy-rajasthani-jutti-500x500.jpg">
+    <img src="https://5.imimg.com/data5/JT/MF/MY-37531300/fancy-rajasthani-jutti-500x500.jpg" alt="img2.exportersindia" width="600" height="400" align="right" hspace="5" vspace="5">
+  </a>
+  <div class="desc">FANCY RAJASTHANI JUTTIS<br><p>price-300/-<br><br><a href="#" style=background-color:yellow><h2>BUY NOW</h2></a></p></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://lazybrats.com/wp-content/uploads/2017/07/JU_ELEP_Elephant-foot-2.jpg">
+    <img src="https://lazybrats.com/wp-content/uploads/2017/07/JU_ELEP_Elephant-foot-2.jpg" alt="ajmersharifindia" width="600" height="400" align="right" hspace="5" vspace="5">
+  </a>
+  <div class="desc">HANDPRINTED JUTTIS<br><p>price-300/-<br><br><a href="#" style=background-color:yellow><h2>BUY NOW</h2></a></p></div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyXfxvamwjFPXyre2tRVyXqXimccSGEK9clRkgoU_HA90o-R2DSQ">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyXfxvamwjFPXyre2tRVyXqXimccSGEK9clRkgoU_HA90o-R2DSQ" alt="encrypted-tbn0" width="600" height="400"align="right" hspace="5" vspace="5" padding="50px 80px 50px 80px">
+  </a>
+  <div class="desc">PANAHAI LEATHER JUTTIS<br><p>price-300/-<br><br><a href="#" style=background-color:yellow><h2>BUY NOW</h2></a></p></div>
+  </a>
+</body>
+</html>
